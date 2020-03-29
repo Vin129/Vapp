@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "47F9FAAF09E0D85C3654369EC5054F107BDD09DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "47F9FAAF09E0D85C3654369EC5054F107BDD09DC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "45FD589A-D375-41DE-A0FB-DAFF753A7B17",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "47F9FAAF09E0D85C3654369EC5054F107BDD09DC" : "OC_Vapp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OC_Base",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OC_Base\/OC_Base.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Vin129\/Vapp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "47F9FAAF09E0D85C3654369EC5054F107BDD09DC"
+    }
+  ]
+}
