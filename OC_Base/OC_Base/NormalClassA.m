@@ -18,4 +18,10 @@
 {
     NSLog(@"%@:%i",_name,num);
 }
+
+-(void)Dispose
+{
+    NSLog(@"Dispose");
+}
+
 @end

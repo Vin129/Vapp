@@ -40,26 +40,46 @@
 }
 @end
 
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSLog(@"Hello, World!");
-        //注意同文件前后文影响
-        ASimpleClass *cA;//*号代表指针，即引用
-        cA = [ASimpleClass new];//创建类实例 等同于 *Class = [[ASimpleClass alloc] init];
-        ASimpleClass *cB = [[ASimpleClass alloc] init];
-        [cA setName:@"class A"];
-        [cB setName:@"class B"];
-        [cA print];
-        [cB print];
-        [cA setNum:0];
-        NSLog(@"Sum : %i",[cA getSum:2 :3]);
-        NSLog(@"==========================");
-        NormalClassA *a = [NormalClassA new];
-        a.name = @"Normal A";
-        a.num = 0;
-        a.print;
-        NSLog(@"Sum : %i",[a getSum:10 :3]);
+//        NSLog(@"Hello, World!");
+//        //注意同文件前后文影响
+//        ASimpleClass *cA;//*号代表指针，即引用
+//        cA = [ASimpleClass new];//创建类实例 等同于 *Class = [[ASimpleClass alloc] init];
+//        ASimpleClass *cB = [[ASimpleClass alloc] init];
+//        [cA setName:@"class A"];
+//        [cB setName:@"class B"];
+//        [cA print];
+//        [cB print];
+//        [cA setNum:0];
+//        NSLog(@"Sum : %i",[cA getSum:2 :3]);
+//        NSLog(@"==========================");
+//        NormalClassA *a = [NormalClassA new];
+//        a.name = @"Normal A";
+//        a.num = 0;
+//        a.print;
+//        NSLog(@"Sum : %i",[a getSum:10 :3]);
         
+//        typedef enum SomeEnum {AnswerA = 0,AnswerB } Answer;
+//
+//        id value = [ASimpleClass new];
+//        SEL action = @selector(print);
+//        if([value respondsToSelector:action] == YES)
+//        {
+//            Answer answer = AnswerB;
+//            [value setName:[NSString stringWithFormat:@"%d",answer]];
+//            [value performSelector:action];
+//        }
+        id <IDispose> disposer;
+        NormalClassA *a = [NormalClassA new];
+        disposer = a;
+        a.name = @"A";
+        a.print;
+        a.Dispose;
+        disposer.Dispose;
+    
     }
     return 0;
 }
